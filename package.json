@@ -1,0 +1,21 @@
+{
+  "name": "turbo-vue",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "license": "MIT",
+  "author": "",
+  "scripts": {
+    "eslint": "eslint --cache   \"**/*.{vue,ts,tsx}\" --fix",
+    "prettier": "prettier --write  \"**/*.{js,json,tsx,css,less,scss,vue,html,md}\"",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@dow/eslint-config-vue": "workspace:^",
+    "@dow/tsconfig": "workspace:^",
+    "eslint": "^8.38.0",
+    "husky": "^8.0.3",
+    "prettier": "^2.8.7",
+    "turbo": "^1.9.1"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "name": "@dow/tsconfig",
+  "version": "1.0.0",
+  "files": [
+    "base.json",
+    "vite.json"
+  ]
+}

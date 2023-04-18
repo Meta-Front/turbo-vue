@@ -7,15 +7,18 @@
   "author": "",
   "scripts": {
     "eslint": "eslint --cache   \"**/*.{vue,ts,tsx}\" --fix",
+    "prepare": "husky install",
     "prettier": "prettier --write  \"**/*.{js,json,tsx,css,less,scss,vue,html,md}\"",
-    "prepare": "husky install"
+    "stylelint": "stylelint --cache --fix \"**/*.{vue,less,postcss,css,scss}\" --cache"
   },
   "devDependencies": {
-    "@dow/eslint-config-vue": "workspace:^",
-    "@dow/tsconfig": "workspace:^",
+    "@dow/eslint-config-vue": "workspace:*",
+    "@dow/stylelint-config": "workspace:*",
+    "@dow/tsconfig": "workspace:*",
     "eslint": "^8.38.0",
     "husky": "^8.0.3",
     "prettier": "^2.8.7",
+    "stylelint": "^15.5.0",
     "turbo": "^1.9.3"
   }
 }

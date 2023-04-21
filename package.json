@@ -12,15 +12,21 @@
     "stylelint": "stylelint --cache --fix \"**/*.{vue,less,postcss,css,scss}\" --cache",
     "preinstall": "npx only-allow pnpm",
     "lint-staged": "lint-staged",
-    "commit": "commit"
+    "commit": "commit",
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "release": "turbo run build  && changeset publish"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.26.1",
     "@commitlint/cli": "^17.6.1",
     "@commitlint/config-conventional": "^17.6.1",
+    "@commitlint/format": "^17.4.4",
     "@commitlint/prompt-cli": "^17.6.1",
     "@dow/eslint-config-vue": "workspace:*",
     "@dow/stylelint-config": "workspace:*",
     "@dow/tsconfig": "workspace:*",
+    "conventional-changelog-atom": "^2.0.8",
     "eslint": "^8.38.0",
     "husky": "^8.0.3",
     "lint-staged": "^13.2.1",

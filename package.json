@@ -11,9 +11,13 @@
     "prettier": "prettier --write  \"**/*.{js,json,tsx,css,less,scss,vue,html,md}\"",
     "stylelint": "stylelint --cache --fix \"**/*.{vue,less,postcss,css,scss}\" --cache",
     "preinstall": "npx only-allow pnpm",
-    "lint-staged": "lint-staged"
+    "lint-staged": "lint-staged",
+    "commit": "commit"
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.6.1",
+    "@commitlint/config-conventional": "^17.6.1",
+    "@commitlint/prompt-cli": "^17.6.1",
     "@dow/eslint-config-vue": "workspace:*",
     "@dow/stylelint-config": "workspace:*",
     "@dow/tsconfig": "workspace:*",

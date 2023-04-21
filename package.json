@@ -6,16 +6,16 @@
   "license": "MIT",
   "author": "",
   "scripts": {
+    "changeset": "changeset",
+    "commit": "commit",
     "eslint": "eslint --cache   \"**/*.{vue,ts,tsx}\" --fix",
-    "prepare": "husky install",
-    "prettier": "prettier --write  \"**/*.{js,json,tsx,css,less,scss,vue,html,md}\"",
-    "stylelint": "stylelint --cache --fix \"**/*.{vue,less,postcss,css,scss}\" --cache",
     "preinstall": "npx only-allow pnpm",
     "lint-staged": "lint-staged",
-    "commit": "commit",
-    "changeset": "changeset",
-    "version-packages": "changeset version",
-    "release": "turbo run build  && changeset publish"
+    "prepare": "husky install",
+    "prettier": "prettier --write  \"**/*.{js,json,tsx,css,less,scss,vue,html,md}\"",
+    "release": "turbo run build  && changeset publish",
+    "stylelint": "stylelint --cache --fix \"**/*.{vue,less,postcss,css,scss}\" --cache",
+    "version-packages": "changeset version"
   },
   "devDependencies": {
     "@changesets/cli": "^2.26.1",

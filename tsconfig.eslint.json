@@ -10,6 +10,8 @@
     "apps",
     "configs",
     "packages",
-    "scripts"
+    "scripts",
+    "*.js",
+    "*.cjs"
   ]
 }

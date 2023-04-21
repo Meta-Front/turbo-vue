@@ -9,7 +9,9 @@
     "eslint": "eslint --cache   \"**/*.{vue,ts,tsx}\" --fix",
     "prepare": "husky install",
     "prettier": "prettier --write  \"**/*.{js,json,tsx,css,less,scss,vue,html,md}\"",
-    "stylelint": "stylelint --cache --fix \"**/*.{vue,less,postcss,css,scss}\" --cache"
+    "stylelint": "stylelint --cache --fix \"**/*.{vue,less,postcss,css,scss}\" --cache",
+    "preinstall": "npx only-allow pnpm",
+    "lint-staged": "lint-staged"
   },
   "devDependencies": {
     "@dow/eslint-config-vue": "workspace:*",
@@ -17,6 +19,7 @@
     "@dow/tsconfig": "workspace:*",
     "eslint": "^8.38.0",
     "husky": "^8.0.3",
+    "lint-staged": "^13.2.1",
     "prettier": "^2.8.7",
     "stylelint": "^15.5.0",
     "turbo": "^1.9.3"

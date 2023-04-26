@@ -26,12 +26,11 @@
     "@dow/eslint-config-vue": "workspace:*",
     "@dow/stylelint-config": "workspace:*",
     "@dow/tsconfig": "workspace:*",
-    "conventional-changelog-atom": "^2.0.8",
-    "eslint": "^8.38.0",
+    "eslint": "^8.39.0",
     "husky": "^8.0.3",
     "lint-staged": "^13.2.1",
-    "prettier": "^2.8.7",
-    "stylelint": "^15.5.0",
+    "prettier": "^2.8.8",
+    "stylelint": "^15.6.0",
     "turbo": "^1.9.3"
   }
 }
